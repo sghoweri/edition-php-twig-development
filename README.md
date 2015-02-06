@@ -26,7 +26,25 @@ Use Composer's `create-project` feature to install the Development Edition into 
 
 This will create a directory called `your-project-name`. It will also install Pattern Lab's default folder structure as well as core, its dependencies, and the select packages as separate Git clones.
 
-### 3. Update Git Remotes
+### 3. Run Generate
+
+To generate Pattern Lab for the first time and make sure everything was installed correctly type:
+
+    php core/console --generate
+
+To list all available commands type:
+
+    php core/console --help
+
+### 4. Start the server
+
+To see Pattern Lab you should open a new tab in terminal and type:
+
+    php core/console --server
+
+And then visit http://localhost:8080
+
+### Update Git Remotes
 
 Due to an issue with Composer the default `remote` values for the `dev` branches are set to the wrong locations. This will cause issues if/when you try to push your changes. To update them you must type:
 
@@ -42,24 +60,6 @@ for each package. The list of packages included in the Development Edition and t
     pattern-lab/styleguidekit-twig-default -> packages/pattern-lab/styleguidekit-twig-default
 
 If you add another Pattern Lab package (e.g. plug-in, StarterKit, etc.) you must also make sure to update the origin for its `dev` branch.
-
-### 4. Run Generate
-
-To generate Pattern Lab for the first time and make sure everything was installed correctly type:
-
-    php core/console --generate
-
-To list all available commands type:
-
-    php core/console --help
-
-### 5. Start the server
-
-To see Pattern Lab you should open a new tab in terminal and type:
-
-    php core/console --server
-
-And then visit http://localhost:8080
 
 ## Adding a New Package
 
