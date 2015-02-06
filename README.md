@@ -53,6 +53,14 @@ To list all available commands type:
 
     php core/console --help
 
+### 5. Start the server
+
+To see Pattern Lab you should open a new tab in terminal and type:
+
+    php core/console --server
+
+And then visit http://localhost:8080
+
 ## Adding a New Package
 
 To add a new package to your version of the Development Edition for Twig type:
