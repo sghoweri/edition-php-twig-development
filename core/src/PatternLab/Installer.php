@@ -12,7 +12,6 @@
 
 namespace PatternLab;
 
-use \Composer\Script\PackageEvent;
 use \PatternLab\InstallerUtil;
 
 class Installer {
@@ -21,7 +20,7 @@ class Installer {
 	 * Run the PL tasks when a package is installed
 	 * @param  {Object}     a script event object from composer
 	 */
-	public static function postPackageInstall(PackageEvent $event) {
+	public static function postPackageInstall(\Composer\Script\Event $event) {
 		
 		// make sure pattern lab has been loaded
 		if (class_exists("\PatternLab\Config")) {
@@ -36,7 +35,7 @@ class Installer {
 	 * Run the PL tasks when a package is updated
 	 * @param  {Object}     a script event object from composer
 	 */
-	public static function postPackageUpdate(PackageEvent $event) {
+	public static function postPackageUpdate(\Composer\Script\Event $event) {
 		
 		// make sure pattern lab has been loaded
 		if (class_exists("\PatternLab\Config")) {
@@ -51,7 +50,7 @@ class Installer {
 	 * Make sure certain things are set-up before running composer's install
 	 * @param  {Object}     a script event object from composer
 	 */
-	public static function preInstallCmd(PackageEvent $event) {
+	public static function preInstallCmd(\Composer\Script\Event $event) {
 		
 		// make sure pattern lab has been loaded
 		if (class_exists("\PatternLab\Config")) {
@@ -66,7 +65,7 @@ class Installer {
 	 * Run the PL tasks when a package is removed
 	 * @param  {Object}     a script event object from composer
 	 */
-	public static function prePackageUninstall(PackageEvent $event) {
+	public static function prePackageUninstall(\Composer\Script\Event $event) {
 		
 		// make sure pattern lab has been loaded
 		if (class_exists("\PatternLab\Config")) {
