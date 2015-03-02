@@ -102,7 +102,7 @@ In `composer.json` you need to update the `require` section to point at the new 
 
 To update the Development Edition's dependencies to use your forked package type:
 
-    composer update pattern-lab/patternengine-mustache
+    composer update pattern-lab/patternengine-twig
 
 ## Testing Against "Releases"
 
