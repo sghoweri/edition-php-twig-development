@@ -33,14 +33,17 @@
 		"pattern-lab/styleguidekit-twig-default": "dev-dev"
 	},
 	"scripts": {
-		"pre-install-cmd": [
-			"PatternLab\\Installer::preInstallCmd"
+		"post-create-project-cmd": [
+			"PatternLab\\Installer::postCreateProjectCmd"
 		],
 		"post-package-install": [
 			"PatternLab\\Installer::postPackageInstall"
 		],
 		"post-package-update": [
 			"PatternLab\\Installer::postPackageUpdate"
+		],
+		"post-root-package-install": [
+			"PatternLab\\Installer::postRootPackageInstall"
 		],
 		"pre-package-uninstall": [
 			"PatternLab\\Installer::prePackageUninstall"
