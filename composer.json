@@ -42,8 +42,8 @@
 		"post-package-update": [
 			"PatternLab\\Installer::postPackageUpdate"
 		],
-		"post-root-package-install": [
-			"PatternLab\\Installer::postRootPackageInstall"
+		"pre-install-cmd": [
+			"PatternLab\\Installer::preInstallCmd"
 		],
 		"pre-package-uninstall": [
 			"PatternLab\\Installer::prePackageUninstall"
