@@ -32,6 +32,19 @@
 		"pattern-lab/starterkit-twig-demo": "dev-dev",
 		"pattern-lab/styleguidekit-twig-default": "dev-dev"
 	},
+	"extra": {
+		"patternlab": {
+			"starterKitSuggestions": [
+				"pattern-lab/starterkit-twig-drupal-minimal",
+				"pattern-lab/starterkit-twig-demo",
+				"aleksip/starterkit-shila-drupal-theme",
+				"forumone/starterkit-twig-drupal-gesso"
+			],
+			"config": {
+				"twigDebug": true
+			}
+		}
+	},
 	"scripts": {
 		"post-install-cmd": [
 			"PatternLab\\Installer::postInstallCmd"
