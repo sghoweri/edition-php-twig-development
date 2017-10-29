@@ -26,11 +26,11 @@
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"require": {
-		"php": ">=5.3.6",
-		"pattern-lab/core": "dev-dev",
-		"pattern-lab/patternengine-twig": "dev-dev",
-		"pattern-lab/starterkit-twig-demo": "dev-dev",
-		"pattern-lab/styleguidekit-twig-default": "dev-dev"
+		"php": ">=5.4",
+		"pattern-lab/core": "^2.8.10",
+		"pattern-lab/patternengine-twig": "^2.1.3",
+		"pattern-lab/starterkit-twig-demo": "^3.0.1",
+		"pattern-lab/styleguidekit-twig-default": "^3.0.0"
 	},
 	"scripts": {
 		"post-install-cmd": [
