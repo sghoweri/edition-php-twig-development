@@ -27,32 +27,17 @@
 	"prefer-stable": true,
 	"require": {
 		"php": ">=5.4",
+		"pattern-lab/composer-plugin": "dev-master",
 		"pattern-lab/core": "dev-develop as 2.8.11",
 		"pattern-lab/patternengine-twig": "dev-develop as 2.1.3",
 		"pattern-lab/starterkit-twig-demo": "dev-develop as 3.0.1",
 		"pattern-lab/styleguidekit-assets-default": "dev-develop as 3.5.0",
 		"pattern-lab/styleguidekit-twig-default": "dev-develop as 3.0.0"
 	},
-	"scripts": {
-		"post-install-cmd": [
-			"PatternLab\\Installer::postInstallCmd"
-		],
-		"post-update-cmd": [
-			"PatternLab\\Installer::postUpdateCmd"
-		],
-		"post-root-package-install": [
-			"PatternLab\\Installer::setProjectInstall",
-			"PatternLab\\Installer::getSuggestedStarterKits",
-			"PatternLab\\Installer::getConfigOverrides"
-		],
-		"post-package-install": [
-			"PatternLab\\Installer::postPackageInstall"
-		],
-		"post-package-update": [
-			"PatternLab\\Installer::postPackageUpdate"
-		],
-		"pre-package-uninstall": [
-			"PatternLab\\Installer::prePackageUninstall"
-		]
-	}
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/aleksip/patternlab-composer-plugin"
+		}
+	]
 }
