@@ -28,7 +28,7 @@
 	"require": {
 		"php": ">=5.4",
 		"pattern-lab/composer-plugin": "dev-master",
-		"pattern-lab/core": "dev-develop as 2.8.11",
+		"pattern-lab/core": "dev-feature/decoupled-core as 2.8.11",
 		"pattern-lab/patternengine-twig": "dev-develop as 2.1.3",
 		"pattern-lab/starterkit-twig-demo": "dev-develop as 3.0.1",
 		"pattern-lab/styleguidekit-assets-default": "dev-develop as 3.5.0",
@@ -39,5 +39,8 @@
 			"type": "vcs",
 			"url": "https://github.com/aleksip/patternlab-composer-plugin"
 		}
-	]
+	],
+	"config": {
+		"bin-dir": "core"
+	}
 }
