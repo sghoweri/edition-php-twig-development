@@ -1,0 +1,71 @@
+v: 2.6.0
+overrideConfig: q
+ie:
+  - DS_Store
+  - less
+  - scss
+id:
+  - scss
+  - .svn
+  - .sass-cache
+cleanPublic: 'true'
+patternStates:
+  - inprogress
+  - inreview
+  - complete
+styleGuideExcludes: ''
+cacheBusterOn: 'true'
+exportDir: export
+publicDir: public
+sourceDir: source
+defaultPattern: all
+defaultShowPatternInfo: false
+lineageMatch: >-
+  {%([ ]+)?(?:include|extends|embed)(
+  |\()[&quot;\&#039;]([\/.@A-Za-z0-9-_]+)[&quot;\&#039;]([\s\S+]*?)%}
+lineageMatchKey: 3
+patternExtension: twig
+twigDebug: false
+twigAutoescape: false
+twigDefaultDateFormat: ''
+twigDefaultIntervalFormat: ''
+twigMacroExt: macro.twig
+twigFilterExt: filter.php
+twigFunctionExt: function.php
+twigTagExt: tag.php
+twigTestExt: test.php
+ishMinimum: '240'
+ishMaximum: '2600'
+ishControlsHide:
+  - hay
+styleguideKit: pattern-lab/styleguidekit-twig-default
+styleguideKitPath: vendor/pattern-lab/styleguidekit-twig-default
+plugins:
+  twigNamespaces:
+    enabled: true
+    namespaces:
+      bolt:
+        paths:
+          - source/_patterns/00-atoms/01-global
+          - source/_patterns/00-atoms/02-text
+          - source/_patterns/00-atoms/03-lists
+          - source/_patterns/00-atoms/04-images
+          - source/_patterns/00-atoms/05-forms
+          - source/_patterns/00-atoms/06-buttons
+          - source/_patterns/00-atoms/07-tables
+          - source/_patterns/00-atoms/08-media
+          - source/_patterns/01-molecules/00-text
+          - source/_patterns/01-molecules/01-layout
+          - source/_patterns/01-molecules/02-blocks
+          - source/_patterns/01-molecules/03-media
+          - source/_patterns/01-molecules/04-forms
+          - source/_patterns/01-molecules/05-navigation
+          - source/_patterns/01-molecules/06-components
+          - source/_patterns/01-molecules/07-messaging
+          - source/_patterns/02-organisms/00-global
+          - source/_patterns/02-organisms/01-article
+          - source/_patterns/02-organisms/02-comments
+          - source/_patterns/02-organisms/03-sections
+          - source/_patterns/03-templates/00-layouts
+          - source/_patterns/03-templates
+          - source/_patterns/04-pages

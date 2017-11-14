@@ -31,7 +31,9 @@
 		"pattern-lab/patternengine-twig": "dev-develop as 2.1.3",
 		"pattern-lab/starterkit-twig-demo": "dev-develop as 3.0.1",
 		"pattern-lab/styleguidekit-assets-default": "dev-develop as 3.5.0",
-		"pattern-lab/styleguidekit-twig-default": "dev-develop as 3.0.0"
+		"pattern-lab/styleguidekit-twig-default": "dev-develop as 3.0.0",
+		"cweagans/composer-patches": "~1.0",
+		"evanlovely/plugin-twig-namespaces": "dev-master"
 	},
 	"scripts": {
 		"post-install-cmd": [
@@ -54,5 +56,8 @@
 		"pre-package-uninstall": [
 			"PatternLab\\Installer::prePackageUninstall"
 		]
+	},
+	"extra": {
+		"patches-file": "composer.patches.json"
 	}
 }
